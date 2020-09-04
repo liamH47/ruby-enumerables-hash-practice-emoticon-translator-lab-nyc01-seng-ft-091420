@@ -35,7 +35,7 @@ def get_english_meaning(file_path, emoticon)
   end
  if library[emoticon] == true
    return library[key][:english]
- else 
+ elsif library[emoticon] == nil 
    return "Sorry, that emoticon was not found"
   end
   
