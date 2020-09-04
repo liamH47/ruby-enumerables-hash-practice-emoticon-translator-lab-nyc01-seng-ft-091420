@@ -33,11 +33,11 @@ def get_english_meaning(file_path, emoticon)
   emoticon = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
- if library[emoticon] == nil
+ if library[emoticon] == true
+   return library[key][:english]
+ else 
    return "Sorry, that emoticon was not found"
   end
-  
- library[:english]
   
 end
 
